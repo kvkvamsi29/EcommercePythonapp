@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="store-layout">
+
+  <!-- ===== SIDEBAR ===== -->
+   <aside class="store-sidebar">
+  <div class="list-group category-box">
+
+    <a href="{% url 'store' %}"
+       class="list-group-item {% if not product_type and not query %}active{% endif %}">
+      All Products
+    </a>
+
+    <a href="{% url 'store' %}?product_type=mobile"
+       class="list-group-item {% if product_type == 'mobile' %}active{% endif %}">
+      Mobiles
+    </a>
+
+    <a href="{% url 'store' %}?product_type=laptop"
+       class="list-group-item {% if product_type == 'laptop' %}active{% endif %}">
+      Laptops
+    </a>
+
+    <a href="{% url 'store' %}?product_type=tablet"
+       class="list-group-item {% if product_type == 'tablet' %}active{% endif %}">
+      Tablets
+    </a>
+
+  </div>
+</aside>
+
+  <!-- ===== PRODUCTS ===== -->
+  <div class="store-content">
+     
+    <!-- ===== PAGE HEADING (OUTSIDE GRID – IMPORTANT) ===== -->
+   {% if query %}
+  <h5 class="mb-4">Results for “{{ query }}”</h5>
+{% elif product_type %}
+  <h5 class="mb-4 text-capitalize">Category : {{ product_type }} </h5>
+{% else %}
+  <h5 class="mb-4">All Products</h5>
+{% endif %}
+
+ <div class="welcome-banner">
+  <h2>Welcome to Your Smart Shopping Destination 🛍️</h2>
+  <p>
+    Discover hand-picked products, seamless checkout, and a wishlist
+    that remembers what you love. Designed for speed, simplicity,
+    and a premium shopping experience.
+  </p>
+</div>
+
+    <!-- ===== PRODUCT GRID (STABLE CONTAINER) ===== -->
+    <div class="product-grid">
+      <div id="product-results">
+        {% include "store/partials/product_list.html" %}
+      </div>
+    </div>
+
+    <!-- ===== PAGINATION ===== -->
+    {% if page_obj.has_other_pages %}
+      <div class="pagination-wrapper">
+
+        {% if page_obj.has_previous %}
+          <a class="page-btn"
+             href="?page={{ page_obj.previous_page_number }}
+             {% if query %}&q={{ query }}{% endif %}
+             {% if product_type %}&product_type={{ product_type }}{% endif %}
+             {% if category %}&category={{ category }}{% endif %}">
+            ‹ Prev
+          </a>
+        {% endif %}
+
+        {% for num in page_obj.paginator.page_range %}
+          {% if page_obj.number == num %}
+            <span class="page-btn active">{{ num }}</span>
+          {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+            <a class="page-btn"
+               href="?page={{ num }}
+               {% if query %}&q={{ query }}{% endif %}
+               {% if product_type %}&product_type={{ product_type }}{% endif %}
+               {% if category %}&category={{ category }}{% endif %}">
+              {{ num }}
+            </a>
+          {% endif %}
+        {% endfor %}
+
+        {% if page_obj.has_next %}
+          <a class="page-btn"
+             href="?page={{ page_obj.next_page_number }}
+             {% if query %}&q={{ query }}{% endif %}
+             {% if product_type %}&product_type={{ product_type }}{% endif %}
+             {% if category %}&category={{ category }}{% endif %}">
+            Next ›
+          </a>
+        {% endif %}
+
+      </div>
+    {% endif %}
+    <!-- ===== END PAGINATION ===== -->
+
+  </div>
+
+</div>
+
+{% endblock %}

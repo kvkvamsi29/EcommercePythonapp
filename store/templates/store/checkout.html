@@ -1,0 +1,660 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="checkout-container">
+
+  <div class="checkout-header">
+    <h2>Secure Checkout</h2>
+    <p>Review items and confirm delivery details</p>
+  </div>
+
+  <form method="POST" onsubmit="showPageLoader(); action="{% url 'checkout' %}" class="checkout-card" autocomplete="off">
+    {% csrf_token %}
+
+    <!-- ================= ORDER SUMMARY ================= -->
+    <div class="order-summary">
+      <h4>Your Items</h4>
+
+      {% for item in cart_items %}
+        <div class="order-item {% if forloop.counter > 3 %}hidden-product{% endif %}">
+          <div>
+            <strong>{{ item.product.name }}</strong>
+            <span class="qty">× {{ item.quantity }}</span>
+          </div>
+          <div class="price">₹{{ item.subtotal }}</div>
+        </div>
+      {% endfor %}
+
+      {% if cart_items|length > 3 %}
+      <button type="button" class="toggle-btn" id="toggleProducts">
+        Show all products
+      </button>
+      {% endif %}
+
+      <div class="order-total">
+        <span>Total</span>
+        <strong>₹{{ total }}</strong>
+      </div>
+    </div>
+
+
+    <!-- ================= SAVED ADDRESSES ================= -->
+    {% if saved_addresses.exists %}
+<div class="saved-address-section">
+
+  <button type="button" class="toggle-btn" id="toggleAddresses">
+    📍 Show Saved Addresses
+  </button>
+
+  <div class="saved-address-grid" id="addressSection" style="display:none;">
+
+    {% for addr in saved_addresses %}
+    <div class="saved-address-card" data-id="{{ addr.id }}">
+
+      <div class="address-view" onclick="selectAddress(this)">
+        <strong class="addr-name">{{ addr.full_name }}</strong>
+        <p class="addr-text">{{ addr.address }}</p>
+        <small class="addr-pin">{{ addr.pincode }}</small>
+        <span class="addr-phone">{{ addr.phone }}</span>
+      </div>
+
+      <div class="address-edit" style="display:none;">
+        <div class="edit-field">
+          <label>Full Name</label>
+          <input type="text" class="edit-name" value="{{ addr.full_name }}">
+        </div>
+
+        <div class="edit-field">
+          <label>Phone Number</label>
+        <input
+  type="text"
+  name="phone"
+  class="edit-phone"
+  maxlength="10"
+  inputmode="numeric"
+  value="{{ addr.phone }}">
+
+        <div class="edit-field">
+          <label>Pincode</label>
+          <input type="text" class="edit-pincode" value="{{ addr.pincode }}">
+        </div>
+
+        <div class="edit-field">
+          <label>Delivery Address</label>
+          <textarea class="edit-address">{{ addr.address }}</textarea>
+          {% comment %} <button type="button" class="map-btn" onclick="openMap()">
+  📍 Select Location from Map
+</button> {% endcomment %}
+<div id="mapBox" style="display:none; margin-top:15px;">
+  <input id="mapSearch" placeholder="Search location..." style="width:100%;padding:10px;">
+  <div id="map" style="height:300px; width:100%; margin-top:10px;"></div>
+</div>
+
+        </div>
+      </div>
+
+      <div class="address-actions">
+        <button type="button" class="edit-btn" onclick="enableEdit(this)">Edit</button>
+        <button type="button" class="save-btn" onclick="saveEdit(this)">Save</button>
+        <button type="button" class="delete-btn" onclick="deleteAddress(this)">Delete</button>
+      </div>
+
+    </div>
+    {% endfor %}
+
+  </div>
+
+</div>
+{% endif %}
+
+
+    <!-- ================= DELIVERY DETAILS ================= -->
+    <div class="delivery-box">
+      <h4>Delivery Details</h4>
+
+      <div class="field">
+        <label>Full Name</label>
+        <input type="text" name="full_name" id="full_name">
+        <span class="status-icon" id="nameStatus"></span>
+        <div class="error-msg" id="nameError"></div>
+      </div>
+
+      <div class="field">
+        <label>Phone Number</label>
+        <input type="text" name="phone" id="phone_main" maxlength="10">
+        <span class="status-icon" id="phoneStatus"></span>
+        <div class="error-msg" id="phoneError"></div>
+      </div>
+
+      <div class="field">
+        <label>Pincode</label>
+        <input type="text" name="pincode" id="pincode" maxlength="6">
+        <span class="status-icon" id="pincodeStatus"></span>
+        <div class="error-msg" id="pincodeError"></div>
+      </div>
+
+      <div class="field">
+        <label>Delivery Address</label>
+        <textarea name="address" id="address" rows="4"></textarea>
+        <span class="status-icon" id="addressStatus"></span>
+        <div class="error-msg" id="addressError"></div>
+      </div>
+    </div>
+
+
+    <!-- ================= SUBMIT ================= -->
+    <button
+  type="button"
+  onClick="showPageLoader();"
+  class="checkout-btn disabled"
+  id="placeOrderBtn"
+
+  disabled>
+  🔒 Complete all fields to place order
+</button>
+
+  </form>
+</div>
+
+
+{% comment %} <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script> {% endcomment %}
+
+<script>
+
+// ================= SIMPLE SUBMIT =================
+// ================= VALIDATION =================
+// ================= VALIDATION =================
+
+const placeOrderBtn = document.getElementById("placeOrderBtn");
+
+
+// ==================================================
+// VALIDATION RULES
+// ==================================================
+
+const rules = {
+
+  // ================= FULL NAME =================
+  full_name: {
+
+    input: document.getElementById("full_name"),
+    error: document.getElementById("nameError"),
+    status: document.getElementById("nameStatus"),
+
+    validate: value => {
+
+      const nameRegex =
+        /^[\p{L}]+(?:[ .'-][\p{L}]+)*$/u;
+
+      // Any irrelevant character immediately makes
+      // this field invalid.
+      if (!nameRegex.test(value)) {
+        return false;
+      }
+
+      const parts = value.trim().split(/\s+/);
+
+      // First + last name required
+      if (parts.length < 2) {
+        return false;
+      }
+
+      // Prevent "John John"
+      if (
+        parts[0].toLowerCase() ===
+        parts[1]?.toLowerCase()
+      ) {
+        return false;
+      }
+
+      return true;
+    },
+
+    message:
+      "Enter a valid full name (first and last name) Example: john doe"
+  },
+
+
+  // ================= PHONE =================
+  phone: {
+
+    input: document.getElementById("phone_main"),
+    error: document.getElementById("phoneError"),
+    status: document.getElementById("phoneStatus"),
+
+    validate: value => {
+      return /^[6-9]\d{9}$/.test(value);
+    },
+
+    message:
+      "Enter a valid 10-digit Indian mobile number"
+  },
+
+
+  // ================= PINCODE =================
+  pincode: {
+
+    input: document.getElementById("pincode"),
+    error: document.getElementById("pincodeError"),
+    status: document.getElementById("pincodeStatus"),
+
+    validate: value => {
+      return /^[1-9]\d{5}$/.test(value);
+    },
+
+    message:
+      "Enter a valid 6-digit pincode"
+  },
+
+
+  // ================= ADDRESS =================
+  address: {
+
+    input: document.getElementById("address"),
+    error: document.getElementById("addressError"),
+    status: document.getElementById("addressStatus"),
+
+    validate: value => {
+
+      // Minimum length
+      if (value.length < 10) {
+        return false;
+      }
+
+      // Maximum length
+      if (value.length > 500) {
+        return false;
+      }
+
+      // Allowed address characters only.
+      //
+      // Letters
+      // Numbers
+      // Spaces
+      // comma
+      // dot
+      // slash
+      // #
+      // hyphen
+      // brackets
+      // apostrophe
+      // &
+      //
+      // Any other irrelevant character = INVALID
+      const addressRegex =
+        /^[\p{L}\d\s,./#\-()'&]+$/u;
+
+      if (!addressRegex.test(value)) {
+        return false;
+      }
+
+      // At least one number
+      // Example: 12 Main Street
+      const digitCount =
+        (value.match(/\d/g) || []).length;
+
+      if (digitCount < 1) {
+        return false;
+      }
+
+      // At least 5 letters
+      const letterCount =
+        (value.match(/\p{L}/gu) || []).length;
+
+      if (letterCount < 5) {
+        return false;
+      }
+
+      return true;
+    },
+
+    message:
+      "Enter a complete delivery address with house/flat number Example : 12/145 kukatpally,hyderabad,500072"
+  }
+
+};
+
+
+// ==================================================
+// VALIDATE ONLY THE FIELD BEING EDITED
+// ==================================================
+
+function validateField(rule) {
+
+  const value = rule.input.value.trim();
+
+  // Clear ONLY this field's previous message
+  rule.error.classList.remove("show");
+  rule.status.textContent = "";
+
+  // Empty field:
+  // don't show an error while the user hasn't entered anything.
+  if (!value) {
+    return false;
+  }
+
+  // Validate THIS field only
+  if (!rule.validate(value)) {
+
+    rule.error.textContent =
+      "❗ " + rule.message;
+
+    rule.error.classList.add("show");
+
+    return false;
+  }
+
+  // Valid field
+  rule.status.textContent = "✔ Valid";
+  rule.status.style.color = "#22c55e";
+
+  return true;
+}
+
+
+// ==================================================
+// LIVE FIELD-BY-FIELD VALIDATION
+// ==================================================
+
+Object.values(rules).forEach(rule => {
+
+  rule.input.addEventListener("input", () => {
+
+    // IMPORTANT:
+    // Do NOT remove invalid characters.
+    //
+    // If user types an irrelevant character,
+    // the character stays visible and the error
+    // is shown for THIS FIELD ONLY.
+
+    validateField(rule);
+
+    // Only update button state.
+    // This does NOT show errors in other fields.
+    updatePlaceOrderButton();
+  });
+
+});
+
+
+// ==================================================
+// CHECK ALL FIELDS
+// ==================================================
+
+function checkAllFieldsValid() {
+
+  return Object.values(rules).every(rule => {
+
+    const value =
+      rule.input.value.trim();
+
+    return (
+      value &&
+      rule.validate(value)
+    );
+  });
+}
+
+
+// ==================================================
+// BUTTON STATE
+// ==================================================
+
+function updatePlaceOrderButton() {
+
+  const allValid =
+    checkAllFieldsValid();
+
+  placeOrderBtn.disabled =
+    !allValid;
+
+  placeOrderBtn.classList.toggle(
+    "disabled",
+    !allValid
+  );
+
+  placeOrderBtn.classList.toggle(
+    "active",
+    allValid
+  );
+
+  placeOrderBtn.innerText =
+    allValid
+      ? "🔒 Place Order Securely →"
+      : "🔒 Complete all fields to place order";
+}
+
+
+// ==================================================
+// FINAL VALIDATION WHEN PLACE ORDER IS CLICKED
+// ==================================================
+
+placeOrderBtn.addEventListener(
+  "click",
+  function(event) {
+
+    event.preventDefault();
+
+    let allValid = true;
+
+    // Now, and ONLY now, validate every field
+    Object.values(rules).forEach(rule => {
+
+      const valid =
+        validateField(rule);
+
+      if (!valid) {
+        allValid = false;
+      }
+    });
+
+    updatePlaceOrderButton();
+
+    // Stop if even one field is invalid
+    if (!allValid) {
+
+      alert(
+        "Please complete all delivery details correctly."
+      );
+
+      return;
+    }
+
+    // Everything is valid
+    const form =
+      document.querySelector(".checkout-card");
+
+    form.submit();
+  }
+);
+
+
+// ==================================================
+// INITIAL BUTTON STATE
+// ==================================================
+//
+// IMPORTANT:
+// We do NOT call validateField() here.
+//
+// Therefore:
+// - no error on page load
+// - no error on untouched fields
+// - button starts disabled
+//
+
+updatePlaceOrderButton();
+
+
+// ==================================================
+// SELECT SAVED ADDRESS
+// ==================================================
+
+function selectAddress(view) {
+
+  const card =
+    view.closest(".saved-address-card");
+
+  document.getElementById("full_name").value =
+    card.querySelector(".addr-name")
+      .innerText
+      .trim();
+
+  document.getElementById("phone_main").value =
+    card.querySelector(".addr-phone")
+      .innerText
+      .trim();
+
+  document.getElementById("address").value =
+    card.querySelector(".addr-text")
+      .innerText
+      .trim();
+
+  document.getElementById("pincode").value =
+    card.querySelector(".addr-pin")
+      .innerText
+      .trim();
+
+  // Do not immediately show errors for every field.
+  // Just update the button state.
+  updatePlaceOrderButton();
+}
+// ================= SELECT ADDRESS =================
+
+
+// ================= EDIT MODE =================
+function enableEdit(btn) {
+  const card = btn.closest(".saved-address-card");
+
+  card.querySelector(".address-view").style.display = "none";
+  card.querySelector(".address-edit").style.display = "block";
+
+  btn.style.display = "none";
+}
+
+
+// ================= SAVE EDIT =================
+function saveEdit(btn) {
+  const card = btn.closest(".saved-address-card");
+   const id =
+    card.dataset.id;
+
+  const name = card.querySelector(".edit-name").value;
+  const phone = card.querySelector(".edit-phone").value;
+  const pincode = card.querySelector(".edit-pincode").value;
+  const address = card.querySelector(".edit-address").value;
+  const nameValid =
+  /^[\p{L}]+(?:[ .'-][\p{L}]+)*$/u.test(name);
+
+const phoneValid =
+  /^[6-9]\d{9}$/.test(phone);
+
+const pincodeValid =
+  /^[1-9]\d{5}$/.test(pincode);
+
+const addressValid =
+  address.length >= 10 &&
+  address.length <= 500 &&
+  (address.match(/\d/g) || []).length >= 1 &&
+  (address.match(/\p{L}/gu) || []).length >= 5;
+
+if (
+  !nameValid ||
+  !phoneValid ||
+  !pincodeValid ||
+  !addressValid
+) {
+  alert("Please enter valid address details before saving.");
+  return;
+}
+  card.querySelector(".addr-name").innerText = name;
+  card.querySelector(".addr-phone").innerText = phone;
+  card.querySelector(".addr-pin").innerText = pincode;
+  card.querySelector(".addr-text").innerText = address;
+
+  card.querySelector(".address-view").style.display = "block";
+  card.querySelector(".address-edit").style.display = "none";
+
+  card.querySelector(".edit-btn").style.display = "inline-block";
+
+  fetch(`/edit_address/${id}/`, {
+        method: "POST",
+        headers: {
+            "X-CSRFToken": "{{ csrf_token }}",
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: new URLSearchParams({
+            name: name,
+            phone: phone,
+            pincode: pincode,
+            address: address
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            location.reload();
+        }
+    });
+}
+
+
+// ================= DELETE =================
+function deleteAddress(btn) {
+    const card = btn.closest(".saved-address-card");
+    const id = card.dataset.id;
+
+    fetch(`/delete_address/${id}/`, {
+        method: "POST",
+        headers: {
+            "X-CSRFToken": "{{ csrf_token }}"
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            card.remove();
+        }
+    });
+}
+
+// ================= TOGGLE PRODUCTS =================
+const toggleProducts = document.getElementById("toggleProducts");
+
+if (toggleProducts) {
+  let expanded = false;
+
+  toggleProducts.addEventListener("click", () => {
+    expanded = !expanded;
+
+    document.querySelectorAll(".hidden-product").forEach(p => {
+      p.style.display = expanded ? "flex" : "none";
+    });
+
+    toggleProducts.innerText = expanded
+      ? "Hide products"
+      : "Show all products";
+  });
+}
+
+
+// ================= TOGGLE ADDRESSES =================
+const toggleAddresses = document.getElementById("toggleAddresses");
+const addressSection = document.getElementById("addressSection");
+
+if (toggleAddresses && addressSection) {
+  let open = false;
+
+  toggleAddresses.addEventListener("click", () => {
+    open = !open;
+
+    addressSection.style.display = open ? "grid" : "none";
+
+    toggleAddresses.innerText = open
+      ? "📍 Hide Saved Addresses"
+      : "📍 Show Saved Addresses";
+  });
+}
+
+</script>
+
+{% endblock %}

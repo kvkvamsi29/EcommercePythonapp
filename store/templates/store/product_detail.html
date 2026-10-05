@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="product-detail-layout product-detail-page">
+
+  <!-- LEFT IMAGE -->
+  <div class="product-image-panel drop-step step-1">
+    <img src="{{ product.image }}" alt="{{ product.name }}" class="product-detail-img">
+  </div>
+
+  <!-- RIGHT INFO -->
+  <div class="product-detail-info">
+
+    <!-- PRODUCT NAME -->
+    <h1 class="drop-step step-2">{{ product.name }}</h1>
+
+    <!-- PRICE -->
+    <div class="product-price drop-step step-3">₹ {{ product.price }}</div>
+
+    <!-- ACTION BUTTONS -->
+    <div class="product-action-row drop-step step-4">
+
+      <!-- ADD TO CART -->
+       <button
+            type="button"
+            class="btn-add-cart {% if product.id in cart_product_ids %}in-cart{% endif %}"
+            data-add-to-cart="{{ product.id }}"
+            {% if product.id in cart_product_ids %}disabled{% endif %}
+          >
+            {% if product.id in cart_product_ids %}
+              ✓ Product in Cart
+            {% else %}
+              Add to Cart
+            {% endif %}
+          </button>
+
+      <!-- VIEW CART -->
+      <a href="{% url 'cart' %}" class="view-cart-btn">
+        View Cart
+      </a>
+
+    </div>
+
+    <!-- BUY NOW -->
+    <a href="{% url 'checkout' %}?buy_now={{ product.id }}" class="buy-now-btn drop-step step-5">
+      Buy Now
+    </a>
+
+    <!-- INFO BOXES -->
+    <div class="product-info-panels">
+
+      <!-- DESCRIPTION -->
+      {% if product.description %}
+      <div class="info-card glow-edge drop-step step-6">
+        <h4>📄 Description</h4>
+        <p>{{ product.description|linebreaks }}</p>
+      </div>
+      {% endif %}
+
+      <!-- FEATURES -->
+      {% if product.features %}
+      <div class="info-card glow-edge drop-step step-7">
+        <h4>✨ Features</h4>
+        <ul class="product-features">
+          <li>{{ product.features|linebreaksbr }}</li>
+        </ul>
+      </div>
+      {% endif %}
+
+      <!-- SPECIFICATIONS (LOCAL DB) -->
+      {% if product.specs %}
+      <div class="info-card glow-edge drop-step step-8">
+        <h4>⚙️ Specifications</h4>
+        <p>{{ product.specs|linebreaks }}</p>
+      </div>
+      {% endif %}
+
+      <!-- ============================= -->
+      <!-- ✅ API PHONE SPECS (STEP 10) -->
+      <!-- ============================= -->
+      {% if api_specs %}
+      <div class="info-card glow-edge drop-step step-9">
+        <h4>📱 Full Phone Specifications</h4>
+
+        {% for section, specs in api_specs.all_specs.items %}
+          <div class="spec-section mt-3">
+            <h5>{{ section }}</h5>
+
+            <ul class="spec-list">
+              {% for row in specs %}
+                <li>
+                  <strong>{{ row.title }}:</strong> {{ row.info }}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+
+      </div>
+      {% endif %}
+      <!-- ============================= -->
+
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}

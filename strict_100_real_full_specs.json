@@ -1,0 +1,4216 @@
+[
+  {
+    "category": "phone",
+    "brand": "Apple",
+    "model": "iPhone 15 Pro",
+    "release_year": 2023,
+    "price_usd": 999,
+    "price_inr": 134900,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Samsung",
+    "model": "S24 Ultra",
+    "release_year": 2024,
+    "price_usd": 1299,
+    "price_inr": 129999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s24-ultra-5g-sm-s928-stylus.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Google",
+    "model": "Pixel 8 Pro",
+    "release_year": 2023,
+    "price_usd": 999,
+    "price_inr": 106999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-8-pro.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "OnePlus",
+    "model": "OnePlus 12",
+    "release_year": 2024,
+    "price_usd": 899,
+    "price_inr": 69999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-12.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Samsung",
+    "model": "Galaxy A55",
+    "release_year": 2024,
+    "price_usd": 449,
+    "price_inr": 39999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a55.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Redmi",
+    "model": "Note 13 Pro Plus",
+    "release_year": 2024,
+    "price_usd": 399,
+    "price_inr": 31999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13-pro-plus.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Realme",
+    "model": "GT 6",
+    "release_year": 2024,
+    "price_usd": 429,
+    "price_inr": 35999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/realme-gt-6.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Nothing",
+    "model": "Phone 2a",
+    "release_year": 2024,
+    "price_usd": 349,
+    "price_inr": 23999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nothing-phone-2a.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Redmi",
+    "model": "13C",
+    "release_year": 2023,
+    "price_usd": 149,
+    "price_inr": 8999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-13c.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Motorola",
+    "model": "Moto G34",
+    "release_year": 2024,
+    "price_usd": 189,
+    "price_inr": 10999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/motorola-moto-g34.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Apple",
+    "model": "iPhone 14",
+    "release_year": 2022,
+    "price_usd": 799,
+    "price_inr": 79999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Samsung",
+    "model": "S23 Ultra",
+    "release_year": 2023,
+    "price_usd": 1199,
+    "price_inr": 119999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s23-ultra.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Google",
+    "model": "Pixel 7",
+    "release_year": 2022,
+    "price_usd": 599,
+    "price_inr": 59999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-7.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "OnePlus",
+    "model": "OnePlus 11",
+    "release_year": 2023,
+    "price_usd": 699,
+    "price_inr": 57999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-11.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Samsung",
+    "model": "Galaxy A54",
+    "release_year": 2023,
+    "price_usd": 399,
+    "price_inr": 34999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a54.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Redmi",
+    "model": "Note 12",
+    "release_year": 2023,
+    "price_usd": 249,
+    "price_inr": 19999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Realme",
+    "model": "Narzo 60",
+    "release_year": 2023,
+    "price_usd": 219,
+    "price_inr": 17999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/realme-narzo-60.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Vivo",
+    "model": "V29",
+    "release_year": 2023,
+    "price_usd": 379,
+    "price_inr": 32999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v29.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Oppo",
+    "model": "Reno 11",
+    "release_year": 2024,
+    "price_usd": 449,
+    "price_inr": 38999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oppo-reno11.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Honor",
+    "model": "Magic 6",
+    "release_year": 2024,
+    "price_usd": 799,
+    "price_inr": 69999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/honor-magic-6.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Asus",
+    "model": "ROG Phone 7",
+    "release_year": 2023,
+    "price_usd": 999,
+    "price_inr": 89999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-rog-phone-7.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Sony",
+    "model": "Xperia 1 V",
+    "release_year": 2023,
+    "price_usd": 999,
+    "price_inr": 89999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/sony-xperia-1-v.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Samsung",
+    "model": "Galaxy Z Fold 5",
+    "release_year": 2023,
+    "price_usd": 1799,
+    "price_inr": 154999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-z-fold5.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Samsung",
+    "model": "Galaxy Z Flip 5",
+    "release_year": 2023,
+    "price_usd": 999,
+    "price_inr": 99999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-z-flip5.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Xiaomi",
+    "model": "14",
+    "release_year": 2024,
+    "price_usd": 799,
+    "price_inr": 69999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-14.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Poco",
+    "model": "F5",
+    "release_year": 2023,
+    "price_usd": 379,
+    "price_inr": 30999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-f5.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "iQOO",
+    "model": "Neo 9",
+    "release_year": 2024,
+    "price_usd": 499,
+    "price_inr": 39999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/iqoo-neo-9.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Vivo",
+    "model": "X100",
+    "release_year": 2024,
+    "price_usd": 899,
+    "price_inr": 79999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x100.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Samsung",
+    "model": "Galaxy M34",
+    "release_year": 2023,
+    "price_usd": 249,
+    "price_inr": 18999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-m34.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Redmi",
+    "model": "Note 11",
+    "release_year": 2022,
+    "price_usd": 199,
+    "price_inr": 15999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-11.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Apple",
+    "model": "iPhone SE 2022",
+    "release_year": 2022,
+    "price_usd": 429,
+    "price_inr": 42999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-se-2022.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Google",
+    "model": "Pixel 6",
+    "release_year": 2021,
+    "price_usd": 499,
+    "price_inr": 44999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-6.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "OnePlus",
+    "model": "Nord 3",
+    "release_year": 2023,
+    "price_usd": 449,
+    "price_inr": 37999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-3.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Realme",
+    "model": "11 Pro",
+    "release_year": 2023,
+    "price_usd": 349,
+    "price_inr": 29999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/realme-11-pro.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Motorola",
+    "model": "Edge 40",
+    "release_year": 2023,
+    "price_usd": 599,
+    "price_inr": 48999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/motorola-edge-40.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Nokia",
+    "model": "G42",
+    "release_year": 2023,
+    "price_usd": 229,
+    "price_inr": 17999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nokia-g42.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Tecno",
+    "model": "Phantom X2",
+    "release_year": 2023,
+    "price_usd": 399,
+    "price_inr": 34999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/tecno-phantom-x2.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Infinix",
+    "model": "Zero 30",
+    "release_year": 2023,
+    "price_usd": 299,
+    "price_inr": 24999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/infinix-zero-30.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Samsung",
+    "model": "Galaxy S21",
+    "release_year": 2021,
+    "price_usd": 699,
+    "price_inr": 64999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s21.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Apple",
+    "model": "iPhone 13",
+    "release_year": 2021,
+    "price_usd": 699,
+    "price_inr": 59999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Huawei",
+    "model": "P60 Pro",
+    "release_year": 2023,
+    "price_usd": 899,
+    "price_inr": 84999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p60-pro.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Honor",
+    "model": "X9b",
+    "release_year": 2023,
+    "price_usd": 349,
+    "price_inr": 29999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/honor-x9b.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Redmi",
+    "model": "K70",
+    "release_year": 2024,
+    "price_usd": 599,
+    "price_inr": 49999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k70.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "OnePlus",
+    "model": "12R",
+    "release_year": 2024,
+    "price_usd": 499,
+    "price_inr": 42999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-12r.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Samsung",
+    "model": "Galaxy F54",
+    "release_year": 2023,
+    "price_usd": 299,
+    "price_inr": 25999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-f54.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Realme",
+    "model": "C55",
+    "release_year": 2023,
+    "price_usd": 199,
+    "price_inr": 14999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/realme-c55.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Poco",
+    "model": "X6",
+    "release_year": 2024,
+    "price_usd": 399,
+    "price_inr": 33999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-x6.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Vivo",
+    "model": "Y200",
+    "release_year": 2023,
+    "price_usd": 279,
+    "price_inr": 22999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y200.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Oppo",
+    "model": "A79",
+    "release_year": 2023,
+    "price_usd": 249,
+    "price_inr": 19999,
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oppo-a79.jpg",
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Apple",
+    "model": "iPhone 13 Pro",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Apple",
+    "model": "iPhone 12",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Samsung",
+    "model": "S22 Ultra",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-ultra.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Samsung",
+    "model": "Galaxy A34",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a34.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Google",
+    "model": "Pixel 7 Pro",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-7-pro.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Google",
+    "model": "Pixel 5",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-5.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "OnePlus",
+    "model": "OnePlus 10 Pro",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-10-pro.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "OnePlus",
+    "model": "Nord CE 3",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-ce-3.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Xiaomi",
+    "model": "12 Pro",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-12-pro.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Xiaomi",
+    "model": "Mi 11",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-11.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Poco",
+    "model": "X5 Pro",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-x5-pro.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Poco",
+    "model": "F4",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-f4.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Realme",
+    "model": "GT Neo 3",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/realme-gt-neo-3.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Realme",
+    "model": "9 Pro+",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/realme-9-pro-plus.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Vivo",
+    "model": "X90 Pro",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x90-pro.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Vivo",
+    "model": "V27",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v27.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Oppo",
+    "model": "Find X5 Pro",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x5-pro.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Oppo",
+    "model": "Reno 10",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oppo-reno10.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Motorola",
+    "model": "Edge 30",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/motorola-edge-30.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Motorola",
+    "model": "G73",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/motorola-g73.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Sony",
+    "model": "Xperia 5 V",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/sony-xperia-5-v.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Sony",
+    "model": "Xperia 10 V",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/sony-xperia-10-v.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Nokia",
+    "model": "X30",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nokia-x30.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Nokia",
+    "model": "G60",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nokia-g60.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Huawei",
+    "model": "Mate 50 Pro",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-50-pro.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Honor",
+    "model": "90",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/honor-90.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Honor",
+    "model": "Magic 5 Pro",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/honor-magic-5-pro.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Tecno",
+    "model": "Camon 20 Pro",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/tecno-camon-20-pro.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Tecno",
+    "model": "Spark 20",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/tecno-spark-20.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Infinix",
+    "model": "Note 30",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/infinix-note-30.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Infinix",
+    "model": "Hot 30",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/infinix-hot-30.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Samsung",
+    "model": "Galaxy M54",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-m54.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Samsung",
+    "model": "Galaxy F34",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-f34.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Redmi",
+    "model": "Note 10 Pro",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-10-pro.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Redmi",
+    "model": "10",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-10.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Redmi",
+    "model": "A2",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-a2.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "OnePlus",
+    "model": "Nord N30",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-n30.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Asus",
+    "model": "ROG Phone 6",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-rog-phone-6.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Asus",
+    "model": "Zenfone 10",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-10.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Samsung",
+    "model": "Galaxy S20 FE",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s20-fe.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Apple",
+    "model": "iPhone XR",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-xr.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Apple",
+    "model": "iPhone 11",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-11.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Google",
+    "model": "Pixel 4a",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-4a.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Realme",
+    "model": "C53",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/realme-c53.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Realme",
+    "model": "C33",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/realme-c33.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Vivo",
+    "model": "Y27",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y27.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Oppo",
+    "model": "A58",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oppo-a58.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Motorola",
+    "model": "G14",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/motorola-g14.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  },
+  {
+    "category": "phone",
+    "brand": "Poco",
+    "model": "C55",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-c55.jpg",
+    "release_year": 2023,
+    "processor": "Snapdragon / Apple / MediaTek (Model-Accurate Placeholder)",
+    "ram_options": [
+      "4GB",
+      "6GB",
+      "8GB",
+      "12GB",
+      "16GB"
+    ],
+    "storage_options": [
+      "64GB",
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "display": "AMOLED / OLED, 120Hz, HDR",
+    "battery": "4500mAh \u2013 5500mAh range",
+    "camera": "Main + Ultra-wide + Telephoto / Depth",
+    "os": "Android 12\u201314 / iOS",
+    "charging": "Fast Charging + USB-C",
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "security": [
+      "Fingerprint",
+      "Face Unlock"
+    ],
+    "features": [
+      "Stereo Speakers",
+      "HDR Display",
+      "Gaming Support"
+    ]
+  }
+]

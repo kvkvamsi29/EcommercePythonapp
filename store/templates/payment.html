@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="payment-container">
+
+  <h2>Choose Payment Method</h2>
+  <p>Secure dummy payment gateway</p>
+
+  <div class="payment-options">
+
+    <!-- CREDIT CARD -->
+    <button class="payment-btn disabled" disabled>
+      💳 Credit Card
+      <span class="soon">Coming Soon</span>
+    </button>
+
+    <!-- DEBIT CARD -->
+    <button class="payment-btn disabled" disabled>
+      💳 Debit Card
+      <span class="soon">Coming Soon</span>
+    </button>
+
+    <!-- UPI -->
+    <button class="payment-btn disabled" disabled>
+      🧾 UPI
+      <span class="soon">Coming Soon</span>
+    </button>
+
+    <!-- CASH ON DELIVERY -->
+    <form method="POST" action="{% url 'place_order_cod' %}">
+      {% csrf_token %}
+      <button class="payment-btn cod">
+        🚚 Cash on Delivery
+      </button>
+    </form>
+
+  </div>
+
+</div>
+
+<style>
+.payment-container {
+  max-width: 480px;
+  margin: auto;
+  padding: 30px;
+}
+
+.payment-options {
+  display: grid;
+  gap: 15px;
+}
+
+.payment-btn {
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.payment-btn.disabled {
+  background: #e5e7eb;
+  color: #6b7280;
+  cursor: not-allowed;
+}
+
+.payment-btn.cod {
+  background: #16a34a;
+  color: white;
+}
+
+.soon {
+  display: block;
+  font-size: 12px;
+  opacity: 0.7;
+}
+</style>
+
+{% endblock %}

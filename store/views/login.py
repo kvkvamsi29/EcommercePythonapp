@@ -1,39 +1,72 @@
-from django.shortcuts import render , redirect , HttpResponseRedirect
-from django.contrib.auth.hashers import  check_password
-from store.models.customer import Customer
+from django.shortcuts import render, redirect
 from django.views import View
+from django.contrib.auth import authenticate, login as dj_login, logout as dj_logout
+
+from store.models.cart import load_cart_from_db
 
 
 class Login(View):
-    return_url = None
 
     def get(self, request):
-        Login.return_url = request.GET.get ('return_url')
-        return render (request, 'login.html')
+        return render(request, "login.html")
 
     def post(self, request):
-        email = request.POST.get ('email')
-        password = request.POST.get ('password')
-        customer = Customer.get_customer_by_email (email)
-        error_message = None
-        if customer:
-            flag = check_password (password, customer.password)
-            if flag:
-                request.session['customer'] = customer.id
 
-                if Login.return_url:
-                    return HttpResponseRedirect (Login.return_url)
-                else:
-                    Login.return_url = None
-                    return redirect ('homepage')
-            else:
-                error_message = 'Invalid !!'
-        else:
-            error_message = 'Invalid !!'
+        username = request.POST.get("username")
+        password = request.POST.get("password")
 
-        print (email, password)
-        return render (request, 'login.html', {'error': error_message})
+        if not username or not password:
+            return render(request, "login.html", {
+                "error": "Username and password are required"
+            })
 
-def logout(request):
-    request.session.clear()
-    return redirect('login')
+        user = authenticate(
+            username=username,
+            password=password
+        )
+
+        if user is None:
+            return render(request, "login.html", {
+                "error": "Invalid username or password"
+            })
+
+        # ============================
+        # LOGIN
+        # ============================
+        dj_login(request, user)
+
+        # ============================
+        # EXISTING USER WITHOUT EMAIL
+        # ============================
+        if not user.email:
+
+            return redirect("complete_account")
+
+        # ============================
+        # AUTO-ADD PENDING CART PRODUCT
+        # ============================
+        pending_product = request.session.pop(
+            "pending_cart_product",
+            None
+        )
+
+        if pending_product:
+
+            cart = request.session.get("cart", {})
+
+            pid = str(pending_product)
+
+            cart[pid] = cart.get(pid, 0) + 1
+
+            request.session["cart"] = cart
+
+            request.session.modified = True
+
+        # ============================
+        # LOAD CART
+        # ============================
+        load_cart_from_db(request)
+
+        next_url = request.GET.get("next")
+
+        return redirect(next_url or "store")

@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container cart-page">
+  <div class="cart-wrapper auto-drop">
+
+    <!-- HERO -->
+    <div class="cart-hero drop-step step-1">
+      <h2>🛒 Your Shopping Cart</h2>
+      <p>Review items and proceed securely.</p>
+    </div>
+
+    {% if cart_items %}
+    <div class="cart-layout">
+
+      <!-- CART ITEMS -->
+      <div class="cart-items">
+
+        {% for item in cart_items %}
+        <div class="cart-card drop-step step-{{ forloop.counter|add:1 }}">
+
+          <!-- IMAGE -->
+          <div class="cart-image">
+            <img src="{{ item.product.image }}" alt="{{ item.product.name }}">
+          </div>
+
+          <!-- DETAILS -->
+          <div class="cart-details">
+            <h5>{{ item.product.name }}</h5>
+            <span class="unit-price">₹ {{ item.product.price }}</span>
+
+            <!-- QTY -->
+            <div class="qty-controls">
+              <button 
+                class="qty-btn"
+                data-cart-action="decrease"
+                data-product-id="{{ item.product.id }}">
+                −
+              </button>
+
+              <span class="qty">{{ item.quantity }}</span>
+
+              <button 
+                class="qty-btn"
+                data-cart-action="increase"
+                data-product-id="{{ item.product.id }}">
+                +
+              </button>
+            </div>
+          </div>
+
+          <!-- PRICE -->
+          <div class="cart-price">
+            <strong>₹ {{ item.subtotal }}</strong>
+          </div>
+
+          <!-- REMOVE -->
+          <button
+            type="button"
+            class="remove-btn"
+            data-cart-action="remove"
+            data-product-id="{{ item.product.id }}">
+            ✕
+          </button>
+
+        </div>
+        {% endfor %}
+
+      </div>
+
+      <!-- SUMMARY -->
+      <div class="cart-summary drop-step step-9">
+        <h4>Order Summary</h4>
+
+        <div class="summary-row">
+          <span>Total</span>
+          <strong>₹ {{ total }}</strong>
+        </div>
+
+        <a href="{% url 'checkout' %}" class="checkout-btn">
+          🔒 Secure Checkout →
+        </a>
+      </div>
+
+    </div>
+
+    {% else %}
+    <!-- EMPTY -->
+    <div class="empty-cart drop-step step-2">
+      <h3>Your cart is empty</h3>
+      <a href="{% url 'store' %}" class="continue-btn">Continue Shopping</a>
+    </div>
+    {% endif %}
+
+  </div>
+</div>
+
+{% endblock %}

@@ -1,60 +1,51 @@
-from django.shortcuts import render , redirect , HttpResponseRedirect
+from django.shortcuts import render
+from django.db.models import Q
 from store.models.product import Products
 from store.models.category import Category
-from django.views import View
 
-
-# Create your views here.
-class Index(View):
-
-    def post(self , request):
-        product = request.POST.get('product')
-        remove = request.POST.get('remove')
-        cart = request.session.get('cart')
-        if cart:
-            quantity = cart.get(product)
-            if quantity:
-                if remove:
-                    if quantity<=1:
-                        cart.pop(product)
-                    else:
-                        cart[product]  = quantity-1
-                else:
-                    cart[product]  = quantity+1
-
-            else:
-                cart[product] = 1
-        else:
-            cart = {}
-            cart[product] = 1
-
-        request.session['cart'] = cart
-        print('cart' , request.session['cart'])
-        return redirect('homepage')
-
-
-
-    def get(self , request):
-        # print()
-        return HttpResponseRedirect(f'/store{request.get_full_path()[1:]}')
 
 def store(request):
-    cart = request.session.get('cart')
-    if not cart:
-        request.session['cart'] = {}
-    products = None
-    categories = Category.get_all_categories()
-    categoryID = request.GET.get('category')
-    if categoryID:
-        products = Products.get_all_products_by_categoryid(categoryID)
-    else:
-        products = Products.get_all_products();
+    search_query = request.GET.get("q", "").strip()
+    product_type = request.GET.get("product_type")
+    selected_category = product_type
 
-    data = {}
-    data['products'] = products
-    data['categories'] = categories
+    products = Products.objects.all()
 
-    print('you are : ', request.session.get('email'))
-    return render(request, 'index.html', data)
+    # -------------------------------
+    # SEARCH (WORKING)
+    # -------------------------------
+    if search_query:
+        products = products.filter(
+            Q(name__icontains=search_query) |
+            Q(description__icontains=search_query)
+        )
 
+    # -------------------------------
+    # ✅ CATEGORY FILTER (REAL FIX)
+    # -------------------------------
+    CATEGORY_MAP = {
+        "mobile": "mobile",
+        "laptop": "laptop",
+        "tablet": "tablet",
+    }
 
+    if product_type in CATEGORY_MAP:
+        products = products.filter(
+            category__name__icontains=CATEGORY_MAP[product_type]
+        )
+
+    # -------------------------------
+    # CART IDS
+    # -------------------------------
+    cart = request.session.get("cart", {})
+    cart_product_ids = list(map(int, cart.keys()))
+
+    context = {
+        "products": products,
+        "categories": Category.objects.all(),
+        "cart_product_ids": cart_product_ids,
+        "search_query": search_query,
+        "selected_category": selected_category,
+    }
+
+    return render(request, "store/store.html", context)

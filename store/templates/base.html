@@ -1,136 +1,366 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <title>E-Commerce</title>
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
+  <!-- Bootstrap utilities only -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
-    <title>E-commerce Website</title>
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="{% static 'css/ecommerce-theme.css' %}">
 
-    <style>
-      nav {
-        background-color: #337ef5;
-      }
-      .one-edge-shadow {
-        box-shadow: 0 8px 2px -5px rgb(246, 245, 245);
-      }
-      .display-8 {
-        font-weight: 200;
-        font-size: 30px;
-        font-colour: $teal-200;
-      }
-    </style>
-  </head>
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <body>
-    <!-- navbar -->
+  <!-- 🔒 HARD LOCK NAVBAR — INLINE GUARANTEE -->
+  <style>
 
-    <nav
-      class="one-edge-shadow navbar navbar-light sticky-top navbar navbar-expand-lg text-white"
+    /* ================================
+   SIMPLE ORANGE 4-DOT LOADER
+   ================================ */
+
+.page-loading-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000000;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(245, 239, 228, 0.92);
+}
+
+.page-loading-overlay.active {
+    display: flex;
+}
+
+.loading-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.loading-dots span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #f28c28;
+
+    animation: orangeDotBounce 0.8s infinite ease-in-out;
+}
+
+.loading-dots span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.loading-dots span:nth-child(2) {
+    animation-delay: 0.12s;
+}
+
+.loading-dots span:nth-child(3) {
+    animation-delay: 0.24s;
+}
+
+.loading-dots span:nth-child(4) {
+    animation-delay: 0.36s;
+}
+
+@keyframes orangeDotBounce {
+    0%,
+    60%,
+    100% {
+        transform: translateY(0);
+        opacity: 0.45;
+    }
+
+    30% {
+        transform: translateY(-6px);
+        opacity: 1;
+    }
+}
+    .navbar {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      width: 100% !important;
+      transform: translate3d(0,0,0) !important;
+      transition: none !important;
+      animation: none !important;
+      z-index: 999999 !important;
+    }
+
+    /* Prevent page animation affecting navbar */
+    body, html, main, .page-animate {
+      transform: none !important;
+    }
+
+    /* Ensure layout spacing */
+    body {
+      padding-top: 90px !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Global page loading screen -->
+<div id="pageLoadingOverlay" class="page-loading-overlay">
+    <div class="loading-dots" aria-label="Loading">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<!-- ================= TOAST ================= -->
+<div id="toast" class="toast"></div>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <div class="navbar-inner container-fluid">
+
+    <a class="navbar-brand" href="{% url 'store' %}">
+      🛍 E-Commerce
+    </a>
+
+    <div class="navbar-right">
+       {% if request.user.is_authenticated %}
+  <a class="nav-link nav-home-btn" href="{% url 'store' %}">
+    🏠 Home
+  </a>
+{% endif %}
+
+      <!-- SEARCH -->
+     <form method="GET" action="/store/" id="liveSearchForm" class="nav-search-form">
+ 
+      <div class="nav-search-box">
+    <i class="fa fa-search search-icon"></i>
+
+    <input 
+      type="text" 
+      name="q" 
+      id="liveSearchInput"
+      placeholder="Search products..."
+      value="{{ search_query }}"
+      autocomplete="off"
+      class="nav-search-input"
     >
-      <a class="navbar-brand ms-3 text-dark" href="/">
-        <link
-          rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-          crossorigin="anonymous"
-        />
+  </div>
+</form>
 
-        <img
-          src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png"
-          style="width:50px;height:50px,color:text-light;"
-        /><b>E-Commerce</b></a
-      >
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/store"
-              >Store <span class="sr-only">(current)</span></a
-            >
-          </li>
-        </ul>
+      <!-- CART -->
+      <div class="nav-cart-wrapper">
+        <a class="nav-link cart-toggle" href="{% url 'cart' %}">
+          🛒 Cart 
+          <span class="cart-badge" id="cartBadge">
+            {{ cart_count }}
+          </span>
+        </a>
 
-        <ul class="navbar-nav my-2 my-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="/cart"
-              >Cart
-              <span class="badge badge-success"
-                >{{request.session.cart.keys|length}}</span
-              >
-              <span class="sr-only">(current)</span></a
-            >
-          </li>
-
-          {% if request.session.customer %}
-
-          <li class="nav-item active">
-            <a class="nav-link" href="/orders"
-              >Orders<span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/logout"
-              >Logout<span class="sr-only">(current)</span></a
-            >
-          </li>
-          {% else %}
-
-          <li class="nav-item active">
-            <a class="nav-link" href="/signup"
-              ><b>Signup</b><span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/login"
-              >Login<span class="sr-only">(current)</span></a
-            >
-          </li>
-          {% endif %}
-        </ul>
+        <div class="mini-cart" id="miniCart">
+          <div class="mini-cart-body" id="miniCartBody">
+            <p class="mini-cart-empty">Cart is empty</p>
+          </div>
+          <div class="mini-cart-footer">
+            <a href="{% url 'cart' %}" class="btn btn-light btn-sm w-100">
+              View Cart
+            </a>
+          </div>
+        </div>
       </div>
-    </nav>
-    <!---->
-    {% block content %}{% endblock %}
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <!-- USER -->
+      {% if request.user.is_authenticated %}
+      <div class="nav-user">
+        <button class="nav-link user-toggle" id="userToggle" type="button">
+          👤 {{ request.user.username }}
+        </button>
+        <div class="user-menu" id="userMenu">
+          <a href="{% url 'orders' %}">📦 My Orders</a>
+          <hr>
+          <a href="{% url 'logout' %}" class="logout">🚪 Logout</a>
+        </div>
+      </div>
+      {% else %}
+        <a class="nav-link" href="{% url 'login' %}">Login</a>
+      {% endif %}
+
+    </div>
+  </div>
+</nav>
+
+<main class="page-animate">
+  {% block content %}{% endblock %}
+</main>
+
+<!-- ================= JS ================= -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="{% static 'js/cart.js' %}"></script>
+
+<script>
+  
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const input = document.getElementById("liveSearchInput");
+  const productGrid = document.getElementById("productGrid");
+
+  if (!input || !productGrid) return;
+
+  let timer = null;
+
+  input.addEventListener("input", function () {
+    clearTimeout(timer);
+
+    timer = setTimeout(() => {
+      const query = input.value.trim();
+
+      fetch(`/store/?q=${encodeURIComponent(query)}`, {
+        headers: { "X-Requested-With": "XMLHttpRequest" }
+      })
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const newGrid = doc.querySelector("#productGrid");
+
+        if (newGrid) {
+          productGrid.innerHTML = newGrid.innerHTML;
+        }
+      });
+
+    }, 120); // ⚡ ultra-fast debounce
+  });
+
+});
+
+
+
+/* ========= SAFE NAVBAR INIT ========= */
+document.addEventListener("DOMContentLoaded", function () {
+
+  const navUser = document.querySelector(".navbar .nav-user");
+  if (!navUser) return;
+
+  const toggle = navUser.querySelector("#userToggle");
+  const menu = navUser.querySelector("#userMenu");
+
+  if (toggle && menu) {
+    toggle.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const miniCart = document.getElementById("miniCart");
+      if (miniCart) miniCart.classList.remove("show");
+
+      menu.classList.toggle("show");
+    });
+
+    document.addEventListener("click", () => {
+      menu.classList.remove("show");
+    });
+  }
+});
+
+/* Smooth page fade */
+/* ==============================
+   GLOBAL PAGE LOADER
+   ============================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  /*
+   * Show loader when a normal page link is clicked.
+   */
+  document.querySelectorAll("a").forEach(function (link) {
+
+    link.addEventListener("click", function (event) {
+
+      /*
+       * Don't show loader for:
+       * - javascript links
+       * - empty links
+       * - new tabs
+       * - downloads
+       * - anchors on the same page
+       */
+      if (
+        !link.href ||
+        link.href.startsWith("javascript:") ||
+        link.target === "_blank" ||
+        link.hasAttribute("download") ||
+        link.getAttribute("href") === "#" ||
+        link.getAttribute("href")?.startsWith("#")
+      ) {
+        return;
+      }
+
+      showPageLoader();
+    });
+
+  });
+
+
+  /*
+   * Show loader when a normal form is submitted.
+   */
+  document.querySelectorAll("form").forEach(function (form) {
+
+    form.addEventListener("submit", function () {
+
+      /*
+       * Don't interfere with GET search forms.
+       */
+      if (form.method.toLowerCase() === "get") {
+        return;
+      }
+
+      showPageLoader();
+
+    });
+
+  });
+
+});
+
+
+/* ==============================
+   LOADER FUNCTIONS
+   ============================== */
+
+function showPageLoader() {
+
+  const loader = document.getElementById("pageLoadingOverlay");
+
+  if (!loader) {
+    return;
+  }
+
+  loader.classList.add("active");
+}
+
+
+function hidePageLoader() {
+
+  const loader = document.getElementById("pageLoadingOverlay");
+
+  if (!loader) {
+    return;
+  }
+
+  loader.classList.remove("active");
+}
+</script>
+
+</body>
 </html>

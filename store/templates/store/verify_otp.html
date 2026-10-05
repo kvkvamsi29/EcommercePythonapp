@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="checkout-container">
+  <div class="checkout-card otp-card">
+
+    <div class="otp-header">
+      <h2>🔐 Verify OTP</h2>
+      <p>We sent a secure code to your phone</p>
+    </div>
+
+   <form method="POST" class="otp-form" action="{% url 'verify_otp' %}">
+
+      {% csrf_token %}
+
+      <div class="otp-input-group">
+        <input type="text" name="otp" maxlength="6" required placeholder="Enter 6-digit OTP">
+      </div>
+       {% if error %}
+    <p style="color:red; font-weight:700;">{{ error }}</p>
+  {% endif %}
+      <button class="checkout-btn otp-btn">
+        Verify & Place Order
+      </button>
+
+    </form>
+
+    <div class="otp-footer">
+      <span>Didn’t receive code?</span>
+      <button type="button" class="resend-btn" id="resendOtpBtn">
+  Resend OTP
+</button>
+
+<p id="otpStatus" style="margin-top:10px; font-weight:600;"></p>
+
+    </div>
+
+  </div>
+</div>
+<script>
+function getCSRFToken() {
+  return document.querySelector('[name=csrfmiddlewaretoken]')?.value;
+}
+document.getElementById("resendOtpBtn")?.addEventListener("click", function () {
+  const status = document.getElementById("otpStatus");
+
+  status.innerText = "Sending OTP...";
+  status.style.color = "#555";
+ 
+  fetch("{% url 'send_otp' %}", {
+    method: "POST",
+    headers: {
+      "X-CSRFToken": getCSRFToken(),
+      "X-Requested-With": "XMLHttpRequest"
+    }
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.status === "ok") {
+      
+      status.innerText = "✅ OTP sent again!";
+      status.style.color = "green";
+    } else {
+      status.innerText = "❌ Failed to resend OTP";
+      status.style.color = "red";
+    }
+  })
+  .catch(() => {
+    status.innerText = "❌ Network error";
+    status.style.color = "red";
+  });
+});
+</script>
+
+
+
+{% endblock %}

@@ -1,55 +1,113 @@
 {% extends 'base.html' %}
-
-
-{% block content %}
 {% load cart %}
 {% load custom_filter %}
-<div class="container">
-   <div class="border rounded p-4 m-4">
-        <p class="display-4 pl-4 ml-4">Your Orders</p>
-        <hr>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Sno.</th>
-                    <th>Image</th>
-                    <th>Product</th>
-                    <th>Date</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Total</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                
-                {% for order in orders %}
-                <tr>
-                    <td>{{forloop.counter}}</td>
-                    <td><img style="height: 80px;" class="rounded-circle" src="{{order.product.image.url}}" alt=""></td>
-                    <td>{{order.product.name}}</td>
-                    <td>{{order.date}}</td>
-                    <td>{{order.price|currency}}</td>
-                    <td>{{order.quantity}}</td>
-                    <td>{{order.quantity|multiply:order.price|currency}}</td>
-                    {% if order.status %}
-                    <td><small class="badge badge-success">Completed</small></td>
-                    {%else%}
-                    <td><small class="badge badge-warning">Pending</small></td>
-                    {% endif %}
-                </tr>
 
-                {% endfor %}
-               
-            </tbody>
+{% block content %}
 
-        </table>
-       
-   </div>
+<div class="orders-container">
+
+  <!-- PAGE HEADER -->
+  <div class="orders-header cinematic-fade">
+    <h2>Your Orders</h2>
+
+    <p class="orders-desc">
+      Thank you for choosing us ❤️  
+      We hope you enjoyed a premium and seamless shopping experience.  
+      Your orders below reflect quality, care, and trust — crafted just for you.
+    </p>
+
+    <p class="orders-note">
+      Every purchase supports innovation, excellence, and customer happiness.  
+      We’re grateful to have you as part of our premium family 💎
+    </p>
+  </div>
+
+  {% if grouped_orders %}
+    <div class="orders-list">
+
+      {% for order in grouped_orders %}
+
+      <div class="order-card cinematic-fade">
+
+        <!-- HEADER CLICK -->
+        <div class="order-top clickable-toggle" data-target="order-items-{{ order.order_id }}">
+
+          <div>
+            <h5>🧾 Order #{{ order.order_id }}</h5>
+            <div class="order-date">{{ order.date }}</div>
+          </div>
+
+          <div class="order-right">
+            <div class="order-total">₹{{ order.total }}</div>
+            <span class="toggle-icon">▼</span>
+          </div>
+
+        </div>
+
+        <!-- STATUS -->
+        <div class="order-status">
+          <p>Delivery Status:</p>
+
+          {% if order.group_status == "Delivered" %}
+            <span class="status success">Delivered</span>
+          {% elif order.group_status == "Shipped" %}
+            <span class="status shipped">Shipped</span>
+          {% else %}
+            <span class="status pending">Pending</span>
+          {% endif %}
+        </div>
+
+        <!-- META -->
+        <div class="order-meta">
+          <p><strong>Delivery Address:</strong> {{ order.address }}</p>
+          <p><strong>Phone:</strong> {{ order.phone }}</p>
+        </div>
+
+        <!-- COLLAPSIBLE ITEMS -->
+        <div class="order-items" id="order-items-{{ order.order_id }}">
+          {% for item in order.items %}
+            <div class="order-item">
+              <span>{{ item.product.name }} × {{ item.quantity }}</span>
+              <strong>₹{{ item.price }}</strong>
+            </div>
+          {% endfor %}
+        </div>
+
+        <!-- FOOTER -->
+        <div class="order-footer">
+          <a href="{% url 'order_invoice' order.order_id %}" class="invoice-btn">
+            Download Invoice
+          </a>
+        </div>
+
+      </div>
+
+      {% endfor %}
+    </div>
+
+  {% else %}
+    <div class="empty-orders">
+      <h4>No orders yet</h4>
+      <p>Your orders will appear here after checkout</p>
+    </div>
+  {% endif %}
+
 </div>
 
+<!-- 🎬 COLLAPSE SCRIPT -->
+<script>
+document.querySelectorAll(".clickable-toggle").forEach(header => {
+  header.addEventListener("click", function () {
+    const targetId = this.getAttribute("data-target");
+    const target = document.getElementById(targetId);
+    const icon = this.querySelector(".toggle-icon");
 
+    if (!target) return;
 
-
+    target.classList.toggle("open");
+    icon.classList.toggle("rotate");
+  });
+});
+</script>
 
 {% endblock %}

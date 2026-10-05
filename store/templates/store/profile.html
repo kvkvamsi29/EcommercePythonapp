@@ -1,0 +1,9 @@
+<form method="post">
+  {% csrf_token %}
+  <input name="phone" value="{{ profile.phone }}" placeholder="Phone">
+  <textarea name="address">{{ profile.address_line }}</textarea>
+  <input name="city" value="{{ profile.city }}">
+  <input name="state" value="{{ profile.state }}">
+  <input name="pincode" value="{{ profile.pincode }}">
+  <button type="submit">Save Address</button>
+</form>

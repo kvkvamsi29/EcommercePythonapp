@@ -1,5 +1,8 @@
 from django import template
 
+from django.shortcuts import redirect, render
+from store.models import Products
+
 register = template.Library ()
 
 
@@ -33,3 +36,23 @@ def total_cart_price(products, cart):
         sum += price_total (p, cart)
 
     return sum
+
+
+def add_to_cart(request, product_id):
+    cart = request.session.get("cart", {})
+
+    cart[str(product_id)] = cart.get(str(product_id), 0) + 1
+    request.session["cart"] = cart
+
+
+
+def cart(request):
+    cart = request.session.get("cart", {})
+    product_ids = cart.keys()
+
+    products = Products.objects.filter(id__in=product_ids)
+
+    return render(request, "cart.html", {
+        "products": products,
+        "cart": cart
+    })

@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models.product import Products
 from .models.category import Category
 from .models.customer import Customer
-from .models.orders import Order
+from .models.order import Order
 
 
 class AdminProduct(admin.ModelAdmin):

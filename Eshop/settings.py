@@ -10,9 +10,13 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
-from pathlib import Path
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+import os
+from pathlib import Path
 
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -22,10 +26,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '-95t%=#4o3@l-(-%ok9*h%n3!0(sdchjn%+_$5#umaj-!3bg*7'
+SECRET_KEY = os.environ["SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv("DEBUG", "False").lower() == "true"
 
 ALLOWED_HOSTS = []
 
@@ -33,6 +37,12 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "django.contrib.sites",
+
+    "allauth",
+    "allauth.account",
+    "allauth.socialaccount",
+    "allauth.socialaccount.providers.google",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,13 +51,17 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'store'
 ]
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+    "allauth.account.middleware.AccountMiddleware",  # ✅ REQUIRED
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'store.middlewares.account_completion.AccountCompletionMiddleware',
+    
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
@@ -66,6 +80,12 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'store.context_processors.cart_count',
+                'store.context_processors.logged_in_user',
+                'store.context_processors.wishlist_count',
+                'store.context_processors.cart_product_ids'
+
+                
             ],
         },
     },
@@ -77,10 +97,25 @@ WSGI_APPLICATION = 'Eshop.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': os.environ["DATABASE_NAME"],
+        'USER': os.environ["DATABASE_USER"],
+        'PASSWORD': os.environ["DATABASE_PASSWORD"],
+        'HOST': os.getenv("DATABASE_HOST", "localhost"),
+        'PORT': os.getenv("DATABASE_PORT", "3306"),
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        }
     }
 }
 
@@ -103,6 +138,27 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTHENTICATION_BACKENDS = (
+    "django.contrib.auth.backends.ModelBackend",
+    "allauth.account.auth_backends.AuthenticationBackend",
+)
+LOGIN_REDIRECT_URL = "/store/"
+LOGOUT_REDIRECT_URL = "/login/"
+ACCOUNT_LOGIN_METHODS = {"email"}
+
+ACCOUNT_SIGNUP_FIELDS = [
+    "email*",
+    "password1*",
+    "password2*",
+]
+ACCOUNT_EMAIL_VERIFICATION = "none"
+SOCIALACCOUNT_LOGIN_ON_GET = True
+SOCIALACCOUNT_PROVIDERS = {
+    "google": {
+        "SCOPE": ["profile", "email"],
+        "AUTH_PARAMS": {"access_type": "online"},
+    }
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
@@ -115,12 +171,38 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 STATIC_URL = '/static/'
-MEDIA_URL = "/image/download/"
-MEDIA_ROOT = BASE_DIR
+# STATICFILES_DIRS = [BASE_DIR / "static"]
+STATIC_ROOT = BASE_DIR / "staticfiles"
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+# ============================
+# EMAIL CONFIG (LOCAL TESTING)
+# ============================
+RAPIDAPI_KEY = os.environ["RAPIDAPI_KEY"]
+# ============================
+# EMAIL / GMAIL SMTP
+# ============================
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = os.environ["EMAIL_HOST_USER"]
+EMAIL_HOST_PASSWORD = os.environ["EMAIL_HOST_PASSWORD"]
+
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+LOGIN_URL = "login"
+LOGIN_REDIRECT_URL = "store"
+LOGOUT_REDIRECT_URL = "login"

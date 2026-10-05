@@ -1,59 +1,74 @@
-{% extends 'base.html' %}
-
-
+{% extends "base.html" %}
 {% block content %}
 
-<div class="container">
-    <div class="p-3 m-3">
-        <div class="col-lg-5 rounded mx-auto border pt-4">
-            <div class="text-center col">
-            
-                <img
-                src="https://th.bing.com/th/id/Rd51d7c0fde6d96a31538a86cbd57f3c0?rik=%2fTJxRkU2V371QQ&riu=http%3a%2f%2ftechnologyend.com%2fwp-content%2fuploads%2f2015%2f11%2fwhy-shop-online.jpg&ehk=v1KiYT0i5U1ABCRueDSdLqnazh2BdlVD89Z4qXE0Kgs%3d&risl=&pid=ImgRaw" alt=""
-                class="" style="height: 150px;">
-            <hr>
-            </div>
-            <h3 class="alert alert-light rounded-pill" style="text-align:center" >Login</h3>
-            <form action="/login" method="POST">
-                
-                {% csrf_token %}
+<div class="auth-page">
+  <div class="auth-card">
 
-                {% if error%}
-                <div class="alert alert-danger" role="alert">
-                    {{error}}
-                </div>
-                {% endif %}
-                <!-- email -->
-                <div class="form-group">
-                    <label for="">Email</label>
-                    <input required type="email" name="email" id=""
-                    value="{{values.email}}" 
-                    class=" form-control-sm form-control" placeholder="abc@gmail.com">
-                </div>
-
-
-                <!-- password -->
-                <div class="form-group">
-                    <label for="">Password</label>
-                    <input type="password" 
-                    name="password" 
-                    id=""
-                     class="form-control form-control-sm" >
-                </div>
-
-                <!--Checkme button-->
-            <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label d-grid gap-2" for="exampleCheck1">Check me out</label>
-                </div>
-                <hr>
-                <button type="submit" class="btn btn-sm btn-success col-lg-12">Login</button>
-
-
-                
-            </form>
-        </div>
+    <div class="auth-intro">
+      <h2>Welcome Back 👋</h2>
+      <p>Login using your username</p>
     </div>
+
+    {% if error %}
+      <div class="alert alert-danger">{{ error }}</div>
+    {% endif %}
+
+    <form method="post" onsubmit="showPageLoader();" class="auth-form" action="{% url 'login' %}">
+      {% csrf_token %}
+
+      <div class="form-group">
+  <label>Username</label>
+  <div class="glass-input">
+    <input 
+      type="text"
+      name="username"
+      class="form-control glass-field"
+      autocomplete="username"
+      autocapitalize="off"
+      spellcheck="false"
+      required>
+  </div>
 </div>
+
+<div class="form-group">
+  <label>Password</label>
+  <div class="glass-input password-box">
+    <input 
+      type="password"
+      name="password"
+      class="form-control glass-field"
+      autocomplete="current-password"
+      required>
+    <span class="toggle-password">👁</span>
+  </div>
+</div>
+
+       <div class="text-right mb-3">
+  <a href="{% url 'forgot_password' %}" class="text-muted">
+    Forgot password?
+  </a>
+</div>
+
+
+      <button type="submit" class="auth-btn">
+        Login
+      </button>
+    </form>
+
+    <div class="auth-footer">
+      Don’t have an account?
+      <a href="{% url 'signup' %}">Sign up</a>
+    </div>
+
+  </div>
+</div>
+<script>
+document.querySelectorAll(".toggle-password").forEach(toggle => {
+  toggle.addEventListener("click", function () {
+    const input = this.previousElementSibling;
+    input.type = input.type === "password" ? "text" : "password";
+  });
+});
+</script>
 
 {% endblock %}

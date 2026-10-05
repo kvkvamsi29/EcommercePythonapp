@@ -1,68 +1,86 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth.hashers import make_password
-from store.models.customer import Customer
 from django.views import View
+from django.contrib.auth.models import User
+from django.contrib import messages
+from django.contrib.auth.password_validation import validate_password
+from django.core.exceptions import ValidationError
 
 
-class Signup (View):
+class Signup(View):
+
     def get(self, request):
-        return render (request, 'signup.html')
+        return render(request, "signup.html")
 
     def post(self, request):
-        postData = request.POST
-        first_name = postData.get ('firstname')
-        last_name = postData.get ('lastname')
-        phone = postData.get ('phone')
-        email = postData.get ('email')
-        password = postData.get ('password')
-        # validation
-        value = {
-            'first_name': first_name,
-            'last_name': last_name,
-            'phone': phone,
-            'email': email
-        }
-        error_message = None
+        username = request.POST.get("username", "").strip()
+        email = request.POST.get("email", "").strip().lower()
+        password = request.POST.get("password", "")
+        confirm_password = request.POST.get("confirm_password", "")
 
-        customer = Customer (first_name=first_name,
-                             last_name=last_name,
-                             phone=phone,
-                             email=email,
-                             password=password)
-        error_message = self.validateCustomer (customer)
+        # ============================
+        # REQUIRED FIELDS
+        # ============================
+        if not username or not email or not password or not confirm_password:
+            return render(request, "signup.html", {
+                "error": "Username, email and password are required.",
+                "username": username,
+                "email": email,
+            })
 
-        if not error_message:
-            print (first_name, last_name, phone, email, password)
-            customer.password = make_password (customer.password)
-            customer.register ()
-            return redirect ('homepage')
-        else:
-            data = {
-                'error': error_message,
-                'values': value
-            }
-            return render (request, 'signup.html', data)
+        # ============================
+        # USERNAME CHECK
+        # ============================
+        if User.objects.filter(username=username).exists():
+            return render(request, "signup.html", {
+                "error": "Username already exists.",
+                "username": username,
+                "email": email,
+            })
 
-    def validateCustomer(self, customer):
-        error_message = None
-        if (not customer.first_name):
-            error_message = "Please Enter your First Name !!"
-        elif len (customer.first_name) < 3:
-            error_message = 'First Name must be 3 char long or more'
-        elif not customer.last_name:
-            error_message = 'Please Enter your Last Name'
-        elif len (customer.last_name) < 3:
-            error_message = 'Last Name must be 3 char long or more'
-        elif not customer.phone:
-            error_message = 'Enter your Phone Number'
-        elif len (customer.phone) < 10:
-            error_message = 'Phone Number must be 10 char Long'
-        elif len (customer.password) < 5:
-            error_message = 'Password must be 5 char long'
-        elif len (customer.email) < 5:
-            error_message = 'Email must be 5 char long'
-        elif customer.isExists ():
-            error_message = 'Email Address Already Registered..'
-        # saving
+        # ============================
+        # EMAIL CHECK
+        # ============================
+        if User.objects.filter(email__iexact=email).exists():
+            return render(request, "signup.html", {
+                "error": "This email is already registered.",
+                "username": username,
+                "email": email,
+            })
 
-        return error_message
+        # ============================
+        # PASSWORD MATCH
+        # ============================
+        if password != confirm_password:
+            return render(request, "signup.html", {
+                "error": "Passwords do not match.",
+                "username": username,
+                "email": email,
+            })
+
+        # ============================
+        # DJANGO PASSWORD VALIDATION
+        # ============================
+        try:
+            validate_password(password)
+        except ValidationError as e:
+            return render(request, "signup.html", {
+                "error": " ".join(e.messages),
+                "username": username,
+                "email": email,
+            })
+
+        # ============================
+        # CREATE USER
+        # ============================
+        User.objects.create_user(
+            username=username,
+            email=email,
+            password=password
+        )
+
+        messages.success(
+            request,
+            "Account created successfully. Please login."
+        )
+
+        return redirect("login")

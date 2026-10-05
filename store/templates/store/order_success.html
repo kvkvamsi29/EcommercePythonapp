@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="order-success-container">
+
+  <div class="success-card cinematic-fade">
+    <div class="success-icon">🎉</div>
+
+    <h1>Order Placed Successfully!</h1>
+
+    {% if order_id %}
+      <p>Your Order ID: <strong>#{{ order_id }}</strong></p>
+    {% endif %}
+
+    <p class="success-msg">
+      Thank you for shopping with us!  
+      Your product is now being processed and will reach you soon.
+    </p>
+
+    <div class="success-actions">
+      <a href="{% url 'store' %}" class="success-btn primary">🏬 Continue Shopping</a>
+      <a href="{% url 'orders' %}" class="success-btn secondary">📦 View My Orders</a>
+    </div>
+
+    <p class="trust-note">
+      We hope you loved the premium shopping experience 💎  
+      Feel free to explore more amazing products!
+    </p>
+  </div>
+
+</div>
+<script>
+/* ===========================
+   HARD BACK-NAVIGATION BLOCK
+   =========================== */
+/* ===========================
+   REAL BACK NAVIGATION BLOCK
+   =========================== */
+(function () {
+  const LOCK_URL = location.href;
+
+  // Replace current history entry (important)
+  history.replaceState({ locked: true }, document.title, LOCK_URL);
+
+  // Detect back/forward cache restore (this is the key fix)
+  window.addEventListener("pageshow", function (event) {
+    if (event.persisted) {
+      
+      location.replace(LOCK_URL);
+    }
+  });
+
+  // Extra safety: popstate fallback
+  window.addEventListener("popstate", function () {
+    
+    history.replaceState({ locked: true }, document.title, LOCK_URL);
+    location.replace(LOCK_URL);
+  });
+
+  // Allow unlock later
+  window.enableBackNavigation = function () {
+    window.onpopstate = null;
+   
+  };
+})();
+
+
+
+/* ===========================
+   CONFETTI SUCCESS ANIMATION 🎉
+   =========================== */
+(function () {
+  const canvas = document.createElement("canvas");
+  canvas.style.position = "fixed";
+  canvas.style.top = 0;
+  canvas.style.left = 0;
+  canvas.style.width = "100%";
+  canvas.style.height = "100%";
+  canvas.style.pointerEvents = "none";
+  canvas.style.zIndex = 9999;
+  document.body.appendChild(canvas);
+
+  const ctx = canvas.getContext("2d");
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const confetti = [];
+  const colors = ["#22c55e", "#3b82f6", "#eab308", "#ec4899", "#a855f7"];
+
+  for (let i = 0; i < 160; i++) {
+    confetti.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height - canvas.height,
+      r: Math.random() * 6 + 4,
+      d: Math.random() * 40 + 10,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      tilt: Math.random() * 10 - 10
+    });
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    confetti.forEach(c => {
+      ctx.beginPath();
+      ctx.fillStyle = c.color;
+      ctx.arc(c.x, c.y, c.r, 0, Math.PI * 2);
+      ctx.fill();
+    });
+    update();
+  }
+
+  function update() {
+    confetti.forEach(c => {
+      c.y += Math.cos(c.d) + 3;
+      c.x += Math.sin(c.d);
+      if (c.y > canvas.height) {
+        c.y = -10;
+        c.x = Math.random() * canvas.width;
+      }
+    });
+  }
+
+  let interval = setInterval(draw, 20);
+
+  // Stop confetti after 5 seconds
+  setTimeout(() => {
+    clearInterval(interval);
+    canvas.remove();
+  }, 5000);
+})();
+
+
+
+
+/* ===========================
+   AUTO REDIRECT AFTER X SECONDS
+   =========================== */
+(function () {
+  const REDIRECT_AFTER = 4; // seconds
+  const REDIRECT_URL = "{% url 'store' %}";
+
+  setTimeout(() => {
+    // Allow back navigation again before leaving
+    if (window.enableBackNavigation) {
+      window.enableBackNavigation();
+    }
+
+    window.location.href = REDIRECT_URL;
+  }, REDIRECT_AFTER * 1000);
+})();
+</script>
+
+
+{% endblock %}

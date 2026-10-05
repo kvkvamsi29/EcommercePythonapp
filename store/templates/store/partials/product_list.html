@@ -1,0 +1,85 @@
+{% load static %}
+{% load custom_filter %}
+
+<div class="store-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="store-sidebar drop-step step-1">
+    <div class="category-box list-group">
+
+      <a href="{% url 'store' %}" 
+         class="list-group-item {% if not selected_category %}active{% endif %}">
+        All Products
+      </a>
+
+      <a href="?product_type=mobile" 
+         class="list-group-item {% if selected_category == 'mobile' %}active{% endif %}">
+        Mobiles
+      </a>
+
+      <a href="?product_type=laptop" 
+         class="list-group-item {% if selected_category == 'laptop' %}active{% endif %}">
+        Laptops
+      </a>
+
+      <a href="?product_type=tablet" 
+         class="list-group-item {% if selected_category == 'tablet' %}active{% endif %}">
+        Tablets
+      </a>
+
+    </div>
+  </aside>
+
+  <!-- CONTENT -->
+  <main class="store-content">
+
+    <h2 class="drop-step step-2">All Products</h2>
+
+    {% if products %}
+
+    <!-- GRID -->
+    <div id="productGrid" class="product-grid auto-drop">
+
+      {% for product in products %}
+      <div class="product-card drop-step step-{{ forloop.counter|add:2 }} {% if product.id in cart_product_ids %}in-cart{% endif %}">
+
+        <!-- IMAGE -->
+        <a href="{% url 'product_detail' product.id %}">
+          <div class="product-image-wrapper">
+            <img src="{{ product.image }}" alt="{{ product.name }}">
+          </div>
+        </a>
+
+        <!-- INFO -->
+        <div class="product-info">
+          <h6>{{ product.name }}</h6>
+          <p class="price">₹ {{ product.price }}</p>
+        </div>
+
+        <!-- CART -->
+        <button
+          type="button"
+          class="btn-add-cart {% if product.id in cart_product_ids %}in-cart{% endif %}"
+          data-add-to-cart="{{ product.id }}"
+          {% if product.id in cart_product_ids %}disabled{% endif %}
+        >
+          {% if product.id in cart_product_ids %}
+            ✓ Product in Cart
+          {% else %}
+            Add to Cart
+          {% endif %}
+        </button>
+
+      </div>
+      {% endfor %}
+
+    </div>
+
+    {% else %}
+      <div class="grid-empty drop-step step-3">
+        <h4>No products found</h4>
+      </div>
+    {% endif %}
+
+  </main>
+</div>
