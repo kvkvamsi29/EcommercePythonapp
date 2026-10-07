@@ -28,3 +28,7 @@ staticfiles/
 # Operating system
 .DS_Store
 Thumbs.db
+
+# Database backup files
+data_backup.json
+data_backup_utf8.json
